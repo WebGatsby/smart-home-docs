@@ -1,0 +1,32 @@
+site_name: SmartHome API Docs
+theme:
+  name: material
+  language: ru
+
+nav:
+  - Главная: index.md
+  - Быстрый старт: getting-started.md
+  - API:
+      - Обзор API: api/overview.md
+      - Аутентификация: api/auth.md
+      - Работа с устройствами: api/devices.md
+      - Телеметрия: api/telemetry.md
+  - Использование:
+      - Примеры: usage/examples.md
+      - Частые ошибки: usage/troubleshooting.md
+  - О проекте: about.md
+  
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.tasklist
+  - admonition
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
